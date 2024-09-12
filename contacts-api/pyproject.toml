@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "contacts-api"
+version = "0.1.0"
+description = ""
+authors = ["Vitaliy Lemanskyi <mezeoq@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.112.2"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[pytest]
+asyncio_loop_scope = "function"
+asyncio_mode = "auto"
